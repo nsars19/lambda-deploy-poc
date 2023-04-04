@@ -10,7 +10,7 @@ export const handler = async (event) => {
       "https://official-joke-api.appspot.com/random_joke"
     );
     const { setup, punchline } = axiosRes.data;
-    const axiosData = `${setup}: ${punchline}`;
+    const axiosData = `${setup} ${punchline}`;
 
     const response = {
       statusCode: 200,
